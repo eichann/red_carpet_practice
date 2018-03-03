@@ -45,8 +45,10 @@ ActiveRecord::Schema.define(version: 20180303044243) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
+    t.bigint "admin_user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["admin_user_id"], name: "index_articles_on_admin_user_id"
   end
 
 end
