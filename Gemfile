@@ -30,6 +30,8 @@ gem 'devise'
 gem "active_material", github: "vigetlabs/active_material"
 gem 'rouge'
 gem 'redcarpet'
+gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
