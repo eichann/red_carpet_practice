@@ -1,24 +1,54 @@
-# README
+# Enjoy Studying Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+adminページを持つブログサイトです。
 
-Things you may want to cover:
+## 動作環境
 
-* Ruby version
+- ruby: 2.4.0
+- Rails: 5.1.5
 
-* System dependencies
+## セットアップ
 
-* Configuration
+#### 1.任意のディレクトリにクローン
 
-* Database creation
+```bash
 
-* Database initialization
+git clone git@gitlab.com:techcamp-study/enjoy_studying.git
 
-* How to run the test suite
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+#### 2.bundle install
 
-* Deployment instructions
+```bash
 
-* ...
+bundle
+
+```
+
+#### 3.データベースを作成
+
+```bash
+
+#DB作成
+rails db:create
+
+#テーブル作成
+rails db:migrate
+
+```
+
+#### 4.初期データ投入
+
+```bash
+
+rails db:seed
+
+```
+
+#### 5.ローカルで立ち上がるか確認
+
+```bash
+
+rails s
+
+```
